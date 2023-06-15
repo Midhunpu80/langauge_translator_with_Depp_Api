@@ -32,7 +32,12 @@ class _homeState extends State<home> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        actions: [Icon(Icons.more_vert_outlined,color: Colors.white,)],
+        actions: const [
+          Icon(
+            Icons.more_vert_outlined,
+            color: Colors.white,
+          )
+        ],
         elevation: 0,
         shadowColor: Colors.black,
         leading: const Icon(
@@ -53,7 +58,7 @@ class _homeState extends State<home> {
           future: data,
           builder: (context, AsyncSnapshot<Marvel> snapshot) {
             return !snapshot.hasData
-                ?const  Center(
+                ? const Center(
                     child: CircularProgressIndicator(),
                   )
                 : ListView(
@@ -73,13 +78,14 @@ class _homeState extends State<home> {
                                   child: DropdownButton(
                                       icon: const Icon(
                                         Icons.arrow_drop_down_circle,
-                                        size: 25,
+                                        size: 20,
                                         color: Colors.purple,
                                       ),
                                       value: value,
                                       hint: const Text(
-                                        "pick your lanagauge",
+                                        "pick a lanagauge",
                                         style: TextStyle(
+                                            fontSize: 16,
                                             color: Colors.purple,
                                             fontWeight: FontWeight.bold),
                                       ),
@@ -117,7 +123,7 @@ class _homeState extends State<home> {
                                     child: DropdownButton(
                                         icon: const Icon(
                                           Icons.arrow_drop_down_circle,
-                                          size: 26,
+                                          size: 20,
                                           color: Colors.purple,
                                         ),
                                         value: value2,

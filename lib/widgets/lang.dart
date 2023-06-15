@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-langauge({TextEditingController? text,required String value}) {
+langauge({TextEditingController? text, required String value}) {
   return SizedBox(
     height: 50,
     width: 100,
@@ -14,9 +14,9 @@ langauge({TextEditingController? text,required String value}) {
               color: Colors.purple,
               size: 39,
             ),
-            label:  Text(
-             value,
-              style: TextStyle(fontSize: 18),
+            label: Text(
+              value,
+              style: const TextStyle(fontSize: 18),
             )),
         IconButton(
             onPressed: () {
