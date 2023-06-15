@@ -32,6 +32,7 @@ class _homeState extends State<home> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        actions: [Icon(Icons.more_vert_outlined,color: Colors.white,)],
         elevation: 0,
         shadowColor: Colors.black,
         leading: const Icon(
@@ -178,7 +179,7 @@ class _homeState extends State<home> {
                                       content: Text("is not empty")));
                             }
                           },
-                          child: const Text("change the value")),
+                          child: const Text("Translate")),
 
                       translated == null
                           ? SizedBox()
