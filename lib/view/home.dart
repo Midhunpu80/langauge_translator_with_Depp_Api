@@ -189,7 +189,7 @@ class _homeState extends State<home> {
 
                       translated == null
                           ? SizedBox()
-                          : translatedlangauge(text: translated.toString())
+                          : translatedlangauge(text: translated.toString(),context: context)
                     ],
                   );
           }),
